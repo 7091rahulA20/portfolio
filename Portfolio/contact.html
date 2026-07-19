@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | RSAGENCY</title>
+    <meta name="description" content="Get in touch with John Doe.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F7B500',
+                        secondary: '#A86A00',
+                        bgMain: '#000000',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="bg-bgMain text-white antialiased selection:bg-primary selection:text-black">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor hidden md:block"></div>
+
+    <!-- Navbar -->
+    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent py-5 scrolled">
+        <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center !py-0 !max-w-none">
+            <a href="index.html" class="text-3xl font-extrabold tracking-widest hover-lift">
+                <span class="text-white">RAHUL</span><span class="text-primary">KUMAR</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link link-underline text-sm uppercase tracking-widest font-medium hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="nav-link link-underline text-sm uppercase tracking-widest font-medium hover:text-primary transition-colors">About</a>
+                <a href="skills.html" class="nav-link link-underline text-sm uppercase tracking-widest font-medium hover:text-primary transition-colors">Skills</a>
+                <a href="services.html" class="nav-link link-underline text-sm uppercase tracking-widest font-medium hover:text-primary transition-colors">Services</a>
+                <a href="projects.html" class="nav-link link-underline text-sm uppercase tracking-widest font-medium hover:text-primary transition-colors">Projects</a>
+                <a href="resume.html" class="nav-link link-underline text-sm uppercase tracking-widest font-medium hover:text-primary transition-colors">Resume</a>
+                <a href="contact.html" class="nav-link link-underline text-sm uppercase tracking-widest font-medium hover:text-primary transition-colors">Contact</a>
+                <a href="assets/resume.pdf" target="_blank" class="btn-primary text-sm ml-4 shadow-premium magnetic">Hire Me</a>
+            </nav>
+
+            <!-- Mobile Menu Btn -->
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl focus:outline-none text-primary" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="fixed inset-0 bg-bgMain/95 backdrop-blur-xl z-40 hidden flex-col items-center justify-center space-y-8">
+            <a href="index.html" class="text-2xl tracking-widest uppercase font-medium hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="text-2xl tracking-widest uppercase font-medium hover:text-primary transition-colors">About</a>
+            <a href="skills.html" class="text-2xl tracking-widest uppercase font-medium hover:text-primary transition-colors">Skills</a>
+            <a href="services.html" class="text-2xl tracking-widest uppercase font-medium hover:text-primary transition-colors">Services</a>
+            <a href="projects.html" class="text-2xl tracking-widest uppercase font-medium hover:text-primary transition-colors">Projects</a>
+            <a href="resume.html" class="text-2xl tracking-widest uppercase font-medium hover:text-primary transition-colors">Resume</a>
+            <a href="contact.html" class="text-2xl tracking-widest uppercase font-medium hover:text-primary transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="pt-40 pb-16 relative overflow-hidden text-center">
+        <div class="absolute right-0 top-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] -z-10"></div>
+        <p class="text-primary font-medium mb-3 tracking-[0.3em] uppercase text-sm" data-aos="fade-up">Portfolio 2026</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold uppercase tracking-widest" data-aos="fade-up" data-aos-delay="100">Get In Touch</h1>
+    </section>
+
+    <main>
+
+        <section id="contact" class="relative pt-0">
+            <div class="container mx-auto max-w-4xl !pt-0">
+                <div class="border border-primary/30 rounded-2xl p-8 md:p-16 relative overflow-hidden" data-aos="fade-up">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[80px] -z-10"></div>
+
+                    <div class="text-center mb-10">
+                        <h3 class="text-3xl md:text-5xl font-bold mb-4 tracking-tight">Let's Build Something Amazing  <span class="text-primary italic font-serif">Together.</span></h3>
+                        <p class="text-gray-400">Whether you need a modern website, a scalable web application, or want to promote your brand through influencer marketing, RSAGENCY is here to help. Let's discuss your project and create something that delivers real results.
+
+Y</p>
+                    </div>
+
+                    <form id="contact-form" class="space-y-6" novalidate>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+                            <input type="email" name="email" placeholder="Your Email" class="form-control" required>
+                        </div>
+                        <input type="text" name="subject" placeholder="Subject" class="form-control" required>
+                        <textarea name="message" placeholder="Your Message" rows="5" class="form-control" required></textarea>
+
+                        <div class="text-center pt-4">
+                            <button type="submit" class="btn-primary w-full md:w-auto px-16">Send Inquiry</button>
+                            <p id="form-status" class="form-status mt-4" role="status" aria-live="polite"></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 text-center">
+                    <div class="glass p-8 rounded-xl border border-primary/10" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-envelope text-primary text-2xl mb-4"></i>
+                        <p class="text-gray-400 text-sm">rsagencyoffical@gmail.com</p>
+                    </div>
+                    <div class="glass p-8 rounded-xl border border-primary/10" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-phone text-primary text-2xl mb-4"></i>
+                        <p class="text-gray-400 text-sm">+91 780-876-3348</p>
+                    </div>
+                    <div class="glass p-8 rounded-xl border border-primary/10" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-location-dot text-primary text-2xl mb-4"></i>
+                        <p class="text-gray-400 text-sm">Aurangabad Bihar , India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-20 pb-10 border-t-2 border-primary/30 relative">
+        <div class="container mx-auto text-center !py-0">
+            <a href="index.html" class="text-4xl font-extrabold tracking-widest mb-8 inline-block">
+                <span class="text-white">RAHUL</span><span class="text-primary">KUMAR</span>
+            </a>
+            <div class="flex justify-center gap-8 mb-10">
+                <a href="https://www.linkedin.com/in/rahul-7044972b5/" target="_blank" class="text-gray-500 hover:text-primary transition-colors text-2xl" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Frsagency.vercel.app%2F%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnbU8HrCr5Jpymu8al9-Auu5ykI4Xph3u-IYIdKJ5sZc5OttSoUZNp1ELceP0_aem__GfxOfUbYt1RRyhgVxNsnQ&e=AUBYJ_Gs1lGvjFUspBmxq5HoJk2GouMaq-N5bdzug9FhYIQ-F4wT9bHvt3ums4sVL31iRgSruZAoTFXC05eI04MOSHB_fgmkLb2wb5McOzpPg42a34OvZg9L61PjmVkGIKUfftA" class="text-gray-500 hover:text-primary transition-colors text-2xl" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                <a href="https://wa.me/917808763348_blank" class="text-gray-500 hover:text-primary transition-colors text-2xl" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rs.agency.in?igsh=eGJ4YmxzaW43bWxo" class="text-gray-500 hover:text-primary transition-colors text-2xl" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <p class="text-gray-600 text-sm tracking-widest uppercase">
+                &copy; 2026 RAHUL KUMAR. Designed with <span class="text-primary">&hearts;</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" class="fixed bottom-8 right-8 w-14 h-14 border border-primary text-primary hover:bg-primary hover:text-black rounded-full flex items-center justify-center text-xl shadow-premium opacity-0 pointer-events-none transition-all duration-300 z-50 hover:scale-110" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Third-party Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

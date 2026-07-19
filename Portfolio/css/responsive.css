@@ -1,0 +1,100 @@
+/* =========================================================
+   Portfolio - Responsive Stylesheet
+   Mobile-first overrides layered on top of style.css
+   ========================================================= */
+
+/* ---------- Large tablets / small laptops (<=1024px) ---------- */
+@media (max-width: 1024px) {
+  .container {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+}
+
+/* ---------- Tablets (<=768px) ---------- */
+@media (max-width: 768px) {
+  .section-title {
+    letter-spacing: 0.08em;
+  }
+
+  .glass {
+    padding: 1.75rem !important;
+  }
+
+  #mobile-menu a {
+    font-size: 1.5rem;
+  }
+
+  .cursor {
+    display: none !important;
+  }
+
+  .timeline-item::before {
+    left: -2.55rem;
+  }
+}
+
+/* ---------- Mobile phones (<=640px) ---------- */
+@media (max-width: 640px) {
+  .container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.75rem !important;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    left: -2.05rem;
+    width: 10px;
+    height: 10px;
+  }
+
+  #back-to-top {
+    width: 48px;
+    height: 48px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}
+
+/* ---------- Small phones (<=380px) ---------- */
+@media (max-width: 380px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .glass {
+    padding: 1.25rem !important;
+  }
+}
+
+/* ---------- Reduced motion accessibility ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
